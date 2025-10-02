@@ -176,3 +176,97 @@
   color: #666;
   margin-top: 50px;
 }
+/* Filter Stats Bar */
+.filter-stats {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stats-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stats-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.stats-text strong {
+  color: #667eea;
+  font-size: 20px;
+}
+
+/* Filter Mode Toggle */
+.filter-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.toggle-label {
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+
+.toggle-buttons {
+  display: flex;
+  gap: 0;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.toggle-button:first-child {
+  border-right: 1px solid #667eea;
+}
+
+.toggle-button:hover {
+  background: #f0f0ff;
+}
+
+.toggle-button.active {
+  background: #667eea;
+  color: white;
+}
+
+.mode-description {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filter-stats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filter-mode-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
